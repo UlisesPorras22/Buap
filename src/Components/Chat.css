@@ -1,0 +1,70 @@
+:root {
+  --background-container: #212121;
+  --background-color: #151515;
+  --color: #ffffff;
+}
+
+.Chat-container {
+  text-align: center;
+  max-width: 400px;
+  height: 90vh;
+  margin: 1%;
+  padding: 1dvh;
+  border-radius: 7px;
+  border: solid 1px var(--color);
+  background-color: var(---background-container);
+}
+
+h1 {
+  margin: 10px;
+}
+
+.Gemini-ia-container {
+  max-height: 720px;
+  height: 720px;
+  overflow-y: scroll;
+}
+
+.message {
+  width: calc(400px - 40px);
+  margin: 2% 0;
+  background-color: darkred;
+  padding: 1% 2% 1% 1%;
+  border-radius: 7px;
+  text-align: start;
+  align-items: center;
+}
+
+.Chat-formulary {
+  width: 100%;
+  text-align: center;
+}
+
+.Chat-formulary > .submit-controls {
+  padding: 0 3%;
+  display: flex;
+  bottom: 0;
+}
+
+.submit-controls > input,
+button {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  background-color: var(--color);
+}
+
+button {
+  width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .Chat-container {
+    width: 95%;
+  }
+}
