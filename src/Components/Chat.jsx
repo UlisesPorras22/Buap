@@ -1,6 +1,5 @@
 import { useState } from "react";
 import './Chat.css'
-import '/src/index.css'
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 
@@ -36,16 +35,13 @@ function App() {
 
     return (
         <>
-            <div className="Chat-container">
+            <div className="bg-cyan-800 w-4/5 h-5/6 text-white Chat-container">
                 <h1 className="text-3xl text-center">Chat AI + With Gemini</h1>
-
                 <form onSubmit={generateAnswer} className="Chat-formulary">
-
                     <div className="Gemini-ia-container">
-                        <ReactMarkdown className="message">{answer}</ReactMarkdown>
+                        <ReactMarkdown className="">{answer}</ReactMarkdown>
                     </div>
-
-                    <div className="submit-controls">
+                    <div className="bg-cyan-800 text-white submit-controls">
                         <input required className="" value={question} onChange={(e) => setQuestion(e.target.value)}
                             placeholder="Di algo" />
                         <button type="submit" className="" disabled={generatingAnswer}>
@@ -53,9 +49,9 @@ function App() {
                         </button>
                     </div>
                 </form>
-
             </div>
         </>
     );
 }
+
 export default App;

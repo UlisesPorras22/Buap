@@ -5,14 +5,8 @@
 }
 
 .Chat-container {
-  text-align: center;
-  max-width: 400px;
-  height: 90vh;
-  margin: 1%;
-  padding: 1dvh;
   border-radius: 7px;
-  border: solid 1px var(--color);
-  background-color: var(---background-container);
+
 }
 
 h1 {
@@ -26,11 +20,11 @@ h1 {
 }
 
 .message {
-  width: calc(400px - 40px);
-  margin: 2% 0;
+  width: calc(400px - 50px);
   background-color: darkred;
-  padding: 1% 2% 1% 1%;
-  border-radius: 7px;
+  margin: 0 3% 0 0;
+  padding: 1%;
+  border-radius: 9px;
   text-align: start;
   align-items: center;
 }
@@ -50,8 +44,9 @@ h1 {
 button {
   background-color: transparent;
   border: none;
-  height: 30px;
+  height: 40px;
   align-items: center;
+  font-size: 16px;
 }
 
 input {
@@ -60,6 +55,7 @@ input {
 }
 
 button {
+  cursor: pointer;
   width: 20%;
 }
 
